@@ -1,0 +1,22 @@
+@import '../styles.scss';
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+header {
+  background-color: $bg-color-light;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Odibee Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+  color: #fff;
+}

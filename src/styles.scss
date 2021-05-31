@@ -1,33 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
 
-$main-color: #FF6978;
-$accent-color: #B1EDE8;
-$bg-color: #2A2B2A;
+$main-color: #ff6978;
+$accent-color: #b1ede8;
+$bg-color: #2a2b2a;
 $bg-color-light: #474847;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
-}
-
-header {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 2rem;
-}
-
-h1 {
-  font-size: 4rem;
-  font-weight: lighter;
-  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
 }
 
 body {
