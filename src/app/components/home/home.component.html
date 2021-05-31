@@ -14,15 +14,14 @@
   <div class="videos">
     <div *ngFor="let video of videos" class="video">
       <div class="video-title">{{ video.title }}</div>
-      <div class="video-grade">
-        <input 
-        [(ngModel)]="video.grade"
-        min="1" 
-        max="5" 
-        type="number"
-        onkeydown="return false"
-        (change)="updateGrade(video)">
-      </div>
+      <input 
+      class="video-grade"
+      [(ngModel)]="video.grade"
+      min="1" 
+      max="5" 
+      type="number"
+      onkeydown="return false"
+      (change)="updateGrade(video)">
     </div>
   </div>
 </div>
