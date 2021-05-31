@@ -12,7 +12,7 @@ import { environment as env } from 'src/environments/environment'
 })
 export class HomeComponent implements OnInit {
   public videos: Array<Video> = [];
-  searchTextChanged: Subject<string> = new Subject<string>();
+  private searchTextChanged: Subject<string> = new Subject<string>();
 
   constructor(
     private httpService: HttpService
