@@ -1,17 +1,16 @@
 <div class="container">
-  <div class="search-container">
-    <div class="search-bar">
-      <input 
-      #searchInput
-      type="text" 
-      name="search" 
-      class="search-input" 
-      placeholder="Search thousands of videos...">
-    </div>
-    <button 
+  <form>
+    <input
+    #searchInput
+    type="text"
+    class="search-input"
+    placeholder="Search thousands of videos...">
+    <input 
+    type="submit"
     class="search-button" 
-    (click)="searchVideos(searchInput.value)">Search</button>
-  </div>
+    value="Search"
+    (click)="searchVideos(searchInput.value)">
+  </form>
   <div class="videos">
     <div *ngFor="let video of videos" class="video">
       <div class="video-title">{{ video.title }}</div>
