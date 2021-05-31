@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { VideosComponent } from './components/videos/videos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    VideosComponent,
   ],
   imports: [
     BrowserModule,

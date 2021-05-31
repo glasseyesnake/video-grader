@@ -7,17 +7,5 @@
     (keyup)="onChangeSearch(searchInput.value)"
     placeholder="Search thousands of videos...">
   </form>
-  <div class="videos">
-    <div *ngFor="let video of videos" class="video">
-      <div class="video-title">{{ video.title }}</div>
-      <input 
-      class="video-grade"
-      [(ngModel)]="video.grade"
-      min="1" 
-      max="5" 
-      type="number"
-      onkeydown="return false"
-      (change)="onChangeGrade(video)">
-    </div>
-  </div>
+  <app-videos [videos]="videos"></app-videos>
 </div>

@@ -43,9 +43,4 @@ export class HomeComponent implements OnInit {
       });
   }
 
-  onChangeGrade(video: Video): void {
-    this.httpService
-      .updateGrade(video)
-      .subscribe()
-  }
 }
