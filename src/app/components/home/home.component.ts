@@ -3,6 +3,7 @@ import { Video } from '../../models';
 import { HttpService } from '../../services/http.service';
 import { Subject } from 'rxjs';
 import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { environment as env } from 'src/environments/environment'
 
 @Component({
   selector: 'app-home',
@@ -22,7 +23,7 @@ export class HomeComponent implements OnInit {
   onChangeSearch(searchString: string) {
     if (this.searchTextChanged.observers.length === 0) {
       this.searchTextChanged
-        .pipe(debounceTime(500), distinctUntilChanged())
+        .pipe(debounceTime(env.DEBOUNCE_TIME), distinctUntilChanged())
         .subscribe(searchString => {
           this.searchVideos(searchString);
         });
