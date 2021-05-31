@@ -4,12 +4,8 @@
     #searchInput
     type="text"
     class="search-input"
+    (keyup)="searchVideos(searchInput.value)"
     placeholder="Search thousands of videos...">
-    <input 
-    type="submit"
-    class="search-button" 
-    value="Search"
-    (click)="searchVideos(searchInput.value)">
   </form>
   <div class="videos">
     <div *ngFor="let video of videos" class="video">

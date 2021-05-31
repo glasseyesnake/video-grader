@@ -11,26 +11,8 @@
     border: none;
     outline: none;
     padding: 10px;
-    margin-right: 10px;
-    width: 250px;
+    width: 300px;
     border-radius: 3px;
-  }
-
-  &-button{
-    background: $bg-color;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  &-button:hover{
-    background-color: $bg-color-light;
-  }
-
-  &-button:active{
-    transform: scale(0.95);
   }
 }
 

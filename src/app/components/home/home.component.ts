@@ -17,6 +17,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void { }
 
   searchVideos(search: string): void {
+    if (!search) {
+      this.videos = []
+      return
+    }
     this.httpService
       .getVideoList(search)
       .subscribe((videoList: Array<Video>) => {
