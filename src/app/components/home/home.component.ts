@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
   }
 
   searchVideos(search: string): void {
-    if (!search) {
+    if (search.length === 0) {
       this.videos = []
       return
     }
