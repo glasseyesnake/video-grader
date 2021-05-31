@@ -4,7 +4,7 @@
     #searchInput
     type="text"
     class="search-input"
-    (keyup)="searchVideos(searchInput.value)"
+    (keyup)="onChangeSearch(searchInput.value)"
     placeholder="Search thousands of videos...">
   </form>
   <div class="videos">
@@ -17,7 +17,7 @@
       max="5" 
       type="number"
       onkeydown="return false"
-      (change)="updateGrade(video)">
+      (change)="onChangeGrade(video)">
     </div>
   </div>
 </div>
