@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="search-container">
+    <div class="search-bar">
+      <input 
+      #searchInput
+      type="text" 
+      name="search" 
+      class="search-input" 
+      placeholder="Search thousands of videos...">
+    </div>
+    <button 
+    class="search-button" 
+    (click)="searchVideos(searchInput.value)">Search</button>
+  </div>
+  <div class="videos">
+    <div *ngFor="let video of videos" class="video">
+      <div class="video-title">{{ video.title }}</div>
+      <div class="video-grade">
+        <input 
+        [(ngModel)]="video.grade"
+        min="1" 
+        max="5" 
+        type="number"
+        onkeydown="return false"
+        (change)="updateGrade(video)">
+      </div>
+    </div>
+  </div>
+</div>
