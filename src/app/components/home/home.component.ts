@@ -14,9 +14,7 @@ export class HomeComponent implements OnInit {
     private httpService: HttpService
   ) { }
 
-  ngOnInit(): void {
-    this.searchVideos("")
-   }
+  ngOnInit(): void { }
 
   searchVideos(search: string): void {
     this.httpService
