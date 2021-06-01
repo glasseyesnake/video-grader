@@ -6,7 +6,6 @@ import { environment as env } from 'src/environments/environment'
 })
 export class MessageService {
   private messages: string[] = []
-  private message: string = ""
 
   constructor() { }
 
