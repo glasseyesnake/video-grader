@@ -1,0 +1,15 @@
+@import '../../../styles.scss';
+
+.messages {
+  position: absolute;
+  max-width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: $accent-color;
+  border-radius: 3px;
+}

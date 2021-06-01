@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   BASE_URL: 'http://localhost:3000',
-  DEBOUNCE_TIME: 300
+  DEBOUNCE_TIME: 300,
+  MESSAGE_TIME: 2500
 };
 
 /*
