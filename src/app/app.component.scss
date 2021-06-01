@@ -3,13 +3,7 @@
 
 header {
   background-color: $bg-color-light;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   padding: 2rem;
 }

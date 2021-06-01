@@ -13,10 +13,6 @@ $bg-color-light: #2F3732;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: $bg-color;
   height: 100vh;
   overflow: hidden;
